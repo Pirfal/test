@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    margin-right: 5px;
+}
+
+.btn-generate { background-color: #4CAF50; }
+.btn-run { background-color: #008CBA; }
+.btn-save { background-color: #f44336; }
+.btn-clear { background-color: #555; }
+.btn-voice { background-color: #ff9800; }
+
+#codeInput {
+    width: 100%;
+    height: 400px;
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: monospace;
+}
+
+.output-container {
+    margin-top: 15px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSharp AI</title>
+    <link rel="stylesheet" href="CodeSharpAI.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CodeSharp AI</h1>
+            <p>Your AI-powered coding assistant – Empowering Developers Everywhere!</p>
+        </header>
+
+        <div class="controls">
+            <select id="languageSelect" onchange="switchLanguage()">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="cpp">C++</option>
+                <option value="php">PHP</option>
+                <option value="ruby">Ruby</option>
+            </select>
+
+            <select id="exampleSelect"></select>
+
+            <button class="btn-generate" onclick="generateCode()">Generate Code</button>
+            <button class="btn-run" onclick="runCode()">Run Code</button>
+            <button class="btn-save" onclick="saveCode()">Save Code</button>
+            <button class="btn-clear" onclick="clearCode()">Clear</button>
+            <button class="btn-voice" onclick="startVoiceCommand()">🎤 Voice Command</button>
+        </div>
+
+        <textarea id="codeInput" placeholder="Write or generate code here..."></textarea>
+
+        <div class="output-container">
+            <h3>Output</h3>
+            <iframe id="outputFrame"></iframe>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 CodeSharp AI - Building the Future of Coding</p>
+        </footer>
+    </div>
+
+    <script src="CodeSharpAI.js"></script>
+</body>
+</html>
